@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -37,7 +38,8 @@ body{
 
 h1{
     text-align:center;
-    font-size:15px;
+    /* responsive font: scales between 1.4rem on small screens and 3rem on large screens */
+    font-size:clamp(1.4rem,4vw,3rem);
     color:#00d4ff;
     margin-bottom:10px;
 }
@@ -154,11 +156,7 @@ footer{
     color:#ff7cfb;
 }
 
-@media(max-width:600px){
-    h1{
-        font-size:2rem;
-    }
-}
+/* remove fixed small-screen override; clamp handles responsiveness */
 </style>
 </head>
 
@@ -198,10 +196,10 @@ footer{
         </div>
 
         <div>
-            <img src="Drink.jpeg" alt="Imagem do local" style="width:24%;border-radius:10px;margin-top:10px;" align="center">
-            <img src="Hamburguer.jpeg" alt="Imagem do local" style="width:24%;border-radius:10px;margin-top:10px;" align="center">
-            <img src="Barco.jpeg" alt="Imagem do local" style="width:24%;border-radius:10px;margin-top:10px;" align="center">
-            <img src="Cover.jpeg" alt="Imagem do local" style="width:24%;border-radius:10px;margin-top:10px;" align="center">
+            <img src="C:\Users\meloe\.vscode\Programas\Drink.jpeg" alt="Imagem do local" style="width:24%;border-radius:10px;margin-top:10px;" align="center">
+            <img src="C:\Users\meloe\.vscode\Programas\Hamburguer.jpeg" alt="Imagem do local" style="width:24%;border-radius:10px;margin-top:10px;" align="center">
+            <img src="C:\Users\meloe\.vscode\Programas\Barco.jpeg" alt="Imagem do local" style="width:24%;border-radius:10px;margin-top:10px;" align="center">
+            <img src="C:\Users\meloe\.vscode\Programas\Cover.jpeg" alt="Imagem do local" style="width:24%;border-radius:10px;margin-top:10px;" align="center">
         </div>
 
         <a 
